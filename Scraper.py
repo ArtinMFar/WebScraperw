@@ -1527,7 +1527,7 @@ def generate_urls():
             for value in data.values():
                 extract_urls(value)
         elif isinstance(data, str):
-            urls.append(BASE_URL + value)
+            urls.append(BASE_URL + data)
 
     extract_urls(URL_MAPPINGS)
 
